@@ -1,0 +1,34 @@
+.contact-section {
+  background: #fffdfa;
+  padding: 54px 7vw 44px 7vw;
+  max-width: 680px;
+  margin: 0 auto 50px auto;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px #0000000a;
+  font-family: 'Playfair Display', serif;
+  color: #232323;
+}
+
+.contact-titre {
+  font-size: 1.45rem;
+  margin-bottom: 34px;
+  text-align: center;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  letter-spacing: 0.1em;
+  color: #c99722;
+}
+
+.contact-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 1.07rem;
+}
+.contact-infos a {
+  color: #3e3932;
+  text-decoration: underline dotted;
+  transition: color 0.15s;
+}
+.contact-infos a:hover {
+  color: #c99722;
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.programme-letterist {
+  margin: 70px 0 60px 0;
+  padding: 0 0 0 7vw;
+  max-width: 680px;
+}
+
+.prog-accordion {
+  background: none !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #e4e1d7;
+  font-family: 'Playfair Display', serif;
+}
+.prog-accordion:last-child {
+  border-bottom: none;
+}
+
+.MuiAccordionSummary-root {
+  padding: 0 8px 0 0 !important;
+  min-height: 56px !important;
+}
+.MuiAccordionSummary-content {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin: 12px 0 !important;
+}
+.programme-date {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 1.08rem;
+  letter-spacing: 0.11em;
+  color: #8cb6b8;
+  text-transform: uppercase;
+  min-width: 120px;
+  font-weight: 400;
+}
+.programme-date-star {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  color: #c99722;
+  font-size: 1.19rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-weight: 700;
+  min-width: 120px;
+  margin-right: 8px;
+}
+.programme-texte,
+.programme-texte-star {
+  font-family: 'Playfair Display', serif;
+  color: #232323;
+  font-size: 1.12rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.star .programme-texte-star strong {
+  color: #e3882f;
+  font-weight: 700;
+}
+.accent-festif {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  color: #e3882f;
+  font-size: 1.08rem;
+  font-weight: 400;
+  margin-left: 10px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+.programme-details {
+  padding: 8px 4px 4px 6px;
+  font-size: 1.05rem;
+  color: #4a4a4a;
+  font-family: 'Playfair Display', serif;
+  opacity: 0.97;
+}
+.programme-details ul {
+  margin: 0 0 0 1.4em;
+  padding: 0;
+}
+.programme-details li {
+  margin-bottom: 2px;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 700px) {
+  .programme-letterist {
+    padding: 0 3vw;
+    max-width: 98vw;
+  }
+  .MuiAccordionSummary-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .programme-date,
+  .programme-date-star,
+  .programme-texte,
+  .programme-texte-star {
+    font-size: 1.01rem;
+  }
+}

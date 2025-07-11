@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.header-letterist {
+  position: relative;
+  border-radius: 0 0 32px 32px;
+  min-height: 70vh; /* Reduced from 100vh to 70vh */
+  height: 70vh; /* Reduced from 100vh to 70vh */
+  padding: 56px 5vw 40px 7vw;
+  margin-bottom: 48px;
+  overflow-x: visible;
+  overflow-y: visible;
+  /* background-image et propriétés dans le style JSX */
+}
+
+/* Overlay translucide optionnel (atténue le fond sans masquer) */
+.header-letterist::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.13);
+  pointer-events: none;
+  border-radius: 0 0 32px 32px;
+  z-index: 0;
+}
+.header-letterist > * {
+  position: relative;
+  z-index: 1;
+}
+
+.lang-btn {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  border-width: 2px !important;
+  padding: 6px 18px;
+  color: #232323 !important;
+  border-color: #bcbcb8 !important;
+  background: #fffefb !important;
+  transition: background .2s;
+}
+.lang-btn:hover {
+  background: #fbe64e !important;
+  border-color: #fbe64e !important;
+  color: #232323 !important;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 44px;
+  height: 100%; /* Take full height of parent */
+  justify-content: flex-end; /* Align content to bottom */
+  padding-bottom: 60px; /* Add some bottom padding */
+}
+
+.vertical-names {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* texte à droite */
+  justify-content: flex-end;
+  gap: 4px; /* espace vertical entre les prénoms, ajuste ici */
+  min-width: 60px;
+  max-width: 120px;
+  /* plus de height ici ! */
+}
+.vertical-prenom {
+  margin: 0;
+  padding: 0;
+  /* plus de height ici ! */
+  display: flex;
+  align-items: center;
+}
+.vertical-prenom.vianney {
+  margin-top: 20px;
+}
+.vertical-prenom.cilene {
+  /* pas de marge pour être collé à VIANNEY */
+}
+
+.vertical-prenom span {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+  letter-spacing: 0.13em;
+  color: #232323;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  line-height: 1;
+  display: block;
+  white-space: nowrap;
+  text-shadow: 0 2px 6px rgba(245,244,238,0.18);
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Plus de bande dégradée */
+}
+
+.header-accroche {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #3e3932;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 6px rgba(245,244,238,0.14);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+  .header-letterist {
+    min-height: 60vh; /* Reduced for tablet */
+    height: 60vh;
+  }
+  .header-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+  }
+  .vertical-names {
+    min-width: 70px;
+    max-width: 100px;
+    height: 110px;
+  }
+  .vertical-prenom {
+    height: 54px;
+  }
+  .header-main {
+    align-items: stretch;
+  }
+  .header-accroche {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-letterist {
+    padding: 36px 3vw 20px 3vw;
+    min-height: 50vh; /* Reduced for mobile */
+    height: 50vh;
+    margin-bottom: 18px;
+    border-radius: 0 0 18px 18px;
+  }
+  .header-content {
+    padding-bottom: 30px;
+  }
+  .vertical-names {
+    min-width: 46px;
+    max-width: 56px;
+    height: 54px;
+  }
+  .vertical-prenom {
+    height: 28px;
+  }
+  .vertical-prenom span {
+    font-size: 1.2rem;
+  }
+}

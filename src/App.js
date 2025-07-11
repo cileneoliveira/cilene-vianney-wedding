@@ -24,10 +24,14 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 // Material Kit 2 React themes
 import theme from "assets/theme";
-import Presentation from "layouts/pages/presentation";
+import FrenchWedding from "layouts/pages/french-wedding";
+import BrazilianWedding from "layouts/pages/brazilian-wedding";
 
 // Material Kit 2 React routes
 import routes from "routes";
+
+// Language context
+import { LanguageProvider } from "contexts/LanguageContext";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -52,13 +56,17 @@ export default function App() {
     });
 
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Routes>
-        {getRoutes(routes)}
-        <Route path="/presentation" element={<Presentation />} />
-        <Route path="*" element={<Navigate to="/presentation" />} />
-      </Routes>
-    </ThemeProvider>
+    <LanguageProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Routes>
+          {getRoutes(routes)}
+          <Route path="/france" element={<FrenchWedding />} />
+          <Route path="/brasil" element={<BrazilianWedding />} />
+          <Route path="/" element={<Navigate to="/france" />} />
+          <Route path="*" element={<Navigate to="/france" />} />
+        </Routes>
+      </ThemeProvider>
+    </LanguageProvider>
   );
 }

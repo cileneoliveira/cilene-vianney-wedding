@@ -5,17 +5,19 @@ import HeaderNavBar from "components/HeaderNavBar";
 import HeaderLetterist from "components/HeaderLetterist";
 import ProgrammeTimeline from "components/ProgrammeTimeline";
 import InfosPratiques from "components/InfosPratiques";
+import LocationCard from "components/LocationCard";
 
-function Presentation() {
-  const { getTranslationKey } = useLanguage();
-  const translationKey = getTranslationKey();
+function BrazilianWedding() {
+  const { currentLanguage } = useLanguage();
+  // Use Brazilian wedding translations based on language
+  const translationKey = currentLanguage === 'fr' ? 'br_fr' : 'br_pt';
   const t = translations[translationKey];
 
   return (
     <div>
       <HeaderNavBar />
       <HeaderLetterist />
-      <section className="rsvp-section" id="rsvp">
+      {/* <section className="rsvp-section" id="rsvp">
         <h2 className="rsvp-titre">{t.rsvp.title}</h2>
         <p>
           {t.rsvp.description}
@@ -31,12 +33,12 @@ function Presentation() {
           <br />
           <small>{t.rsvp.deadline}</small>
         </p>
-      </section>
-      <ProgrammeTimeline />
-      <InfosPratiques />
-      {/* Ajoute ici le reste de ta page */}
+      </section> */}
+      {/* <ProgrammeTimeline /> */}
+      {/* <InfosPratiques /> */}
+      <LocationCard />
     </div>
   );
 }
 
-export default Presentation;
+export default BrazilianWedding; 

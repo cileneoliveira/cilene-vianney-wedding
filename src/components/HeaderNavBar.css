@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.header-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 1px 16px #c997220d;
+  padding: 0 7vw;
+  border-bottom: 1px solid #eee3;
+}
+
+.header-navbar-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  min-height: 56px;
+}
+
+.navbar-names {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 32px;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 1.13rem;
+  letter-spacing: 0.13em;
+  color: #c99722;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 34px;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 56px;
+}
+
+.menu-list li a {
+  display: flex;
+  align-items: center;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  color: #3e3932;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  text-decoration: none;
+  font-size: 1.13rem;
+  transition: color 0.16s;
+  height: 34px;
+  padding: 6px 4px;
+  border-radius: 7px;
+}
+
+.header-wedding-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 56px;
+  margin-right: 12px;
+}
+
+.header-lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 56px;
+}
+
+/* Wedding selection buttons */
+.header-navbar .header-wedding-switch .wedding-btn {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  z-index: 1 !important;
+  height: 34px !important;
+  min-width: 60px !important;
+  margin: 0 !important;
+  padding: 0 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: 'Bebas Neue', Arial, sans-serif !important;
+  font-size: 0.9rem !important;
+  border-radius: 9px !important;
+  border: 1.6px solid #d6d2b9 !important;
+  background: #fff !important;
+  color: #3e3932 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  box-sizing: border-box !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  text-decoration: none !important;
+}
+
+.header-navbar .header-wedding-switch .wedding-btn:hover,
+.header-navbar .header-wedding-switch .wedding-btn:focus {
+  background: #fbe64e !important;
+  border-color: #fbe64e !important;
+  color: #232323 !important;
+  text-decoration: none !important;
+}
+
+.header-navbar .header-wedding-switch .wedding-btn.active {
+  background: #fbe64e !important;
+  border-color: #fbe64e !important;
+  color: #232323 !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+/* SEULEMENT les boutons du menu sticky, PAS ceux du hero */
+.header-navbar .header-lang-switch .lang-btn {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  z-index: 1 !important;
+  height: 34px !important;
+  min-width: 44px !important;
+  margin: 0 !important;
+  padding: 0 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: 'Bebas Neue', Arial, sans-serif !important;
+  font-size: 1.01rem !important;
+  border-radius: 9px !important;
+  border: 1.6px solid #d6d2b9 !important;
+  background: #fff !important;
+  color: #3e3932 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  box-sizing: border-box !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.header-navbar .header-lang-switch .lang-btn:hover,
+.header-navbar .header-lang-switch .lang-btn:focus {
+  background: #fbe64e !important;
+  border-color: #fbe64e !important;
+  color: #232323 !important;
+}
+
+.header-navbar .header-lang-switch .lang-btn.active {
+  background: #fbe64e !important;
+  border-color: #fbe64e !important;
+  color: #232323 !important;
+  font-weight: 700 !important;
+}
+
+@media (max-width: 900px) {
+  .header-navbar {
+    padding: 0 3vw;
+  }
+  .header-navbar-inner {
+    height: 44px;
+    min-height: 44px;
+  }
+  .menu-list {
+    gap: 18px;
+    height: 44px;
+  }
+  .header-navbar .header-lang-switch .lang-btn,
+  .header-navbar .header-wedding-switch .wedding-btn,
+  .navbar-names,
+  .menu-list li a {
+    height: 26px !important;
+    font-size: 0.96rem !important;
+    padding: 0 8px !important;
+  }
+  .navbar-names {
+    font-size: 0.95rem;
+    margin-right: 10px;
+    height: 22px;
+    gap: 5px;
+  }
+  .header-wedding-switch {
+    margin-right: 8px;
+  }
+}

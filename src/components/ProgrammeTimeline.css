@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* FOND HARMONISÉ POUR PROGRAMME ET INFOS */
+.programme-timeline-section,
+.informations-section {
+  background: #f8f7f2;
+  padding: 70px 7vw 60px 7vw;
+  max-width: 820px;
+  margin: 0 auto 56px auto;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px #0000000b;
+}
+
+.programme-titre {
+  font-size: 1.8rem;
+  margin-bottom: 48px;
+  text-align: center;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  letter-spacing: 0.1em;
+  color: #c99722;
+}
+
+/* TIMELINE FLUIDE, PAS D’ABSOLU */
+.timeline-flex {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 32px;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  min-height: 110px;
+  width: 100%;
+}
+
+/* LIGNE VERTICALE CONTINUE */
+.timeline-flex::before {
+  content: "";
+  position: absolute;
+  left: 36px;
+  top: 18px;
+  bottom: 12px;
+  width: 3.5px;
+  background: linear-gradient(to bottom, #e2c573 0%, #b9e4b2 100%);
+  border-radius: 2px;
+  z-index: 0;
+}
+
+/* POINTS */
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fae363;
+  border: 2px solid #c99722;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 1px 5px #fbe64e44;
+  margin-top: 5px;
+  margin-right: 0px;
+  margin-left: 18px;
+}
+.timeline-dot.principale {
+  background: #e3882f;
+  border-color: #bcbcb8;
+}
+
+/* ICÔNES PLACEHOLDER */
+.timeline-icon {
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  z-index: 5;
+}
+
+.icon-placeholder {
+  width: 34px;
+  height: 34px;
+  background: #f2efe5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.42rem;
+  box-shadow: 0 2px 7px rgba(245, 244, 238, 0.13);
+  border: 1.5px solid #e5dec7;
+}
+
+.timeline-content {
+  flex: 1;
+  min-width: 0;
+  margin-left: 20px;
+}
+
+.timeline-accordion {
+  width: 100%;
+  background: none !important;
+  box-shadow: none !important;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 1px solid #e4e1d7;
+  border-radius: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.timeline-date {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 1.09rem;
+  letter-spacing: 0.11em;
+  color: #8cb6b8;
+  text-transform: uppercase;
+  min-width: 120px;
+  font-weight: 400;
+  margin-right: 18px;
+}
+.timeline-date.principale,
+.timeline-texte.principale {
+  color: #c99722;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.timeline-texte {
+  font-family: 'Playfair Display', serif;
+  color: #232323;
+  font-size: 1.12rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.timeline-details {
+  padding: 10px 0 0 0;
+  color: #4a4a4a;
+  font-size: 1.02rem;
+  font-family: 'Playfair Display', serif;
+}
+.timeline-details ul {
+  margin: 0 0 0 1.4em;
+  padding: 0;
+}
+.timeline-details li {
+  margin-bottom: 2px;
+}
+
+.MuiAccordionSummary-root {
+  padding: 0 8px 0 0 !important;
+  min-height: 56px !important;
+  background: none;
+}
+.MuiAccordionSummary-content {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin: 12px 0 !important;
+  font-family: 'Playfair Display', serif;
+}
+.MuiAccordionDetails-root {
+  padding: 16px 0 24px 0 !important;
+  background: none;
+}
+
+.star .timeline-date.principale,
+.star .timeline-texte.principale {
+  color: #e3882f;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .programme-timeline-section,
+  .informations-section {
+    padding: 32px 3vw 26px 3vw;
+    max-width: 98vw;
+    border-radius: 14px;
+  }
+  .programme-titre {
+    font-size: 1.2rem;
+    margin-bottom: 28px;
+  }
+  .timeline-flex {
+    gap: 18px;
+  }
+  .timeline-item {
+    min-height: 64px;
+  }
+  .timeline-icon { width: 28px; }
+  .icon-placeholder { width: 19px; height: 19px; font-size: 0.92rem; }
+  .timeline-dot { width: 10px; height: 10px; margin-left: 10px; }
+}
+
+/* Harmonise la section infos à venir */
