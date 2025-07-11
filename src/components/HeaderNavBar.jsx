@@ -14,20 +14,20 @@ export default function HeaderNavBar() {
     changeLanguage(language);
   };
 
-  const isFrenchWedding = location.pathname.includes('/france');
-  const isBrazilianWedding = location.pathname.includes('/brasil');
+  const isFrenchWedding = location.pathname.includes("/france");
+  const isBrazilianWedding = location.pathname.includes("/brasil");
 
   // Wedding button labels based on language
   const getWeddingLabels = () => {
-    if (currentLanguage === 'pt') {
+    if (currentLanguage === "pt") {
       return {
         france: "FRANÇA",
-        brazil: "BRASIL"
+        brazil: "BRASIL",
       };
     } else {
       return {
         france: "FRANCE",
-        brazil: "BRÉSIL"
+        brazil: "BRÉSIL",
       };
     }
   };
@@ -47,33 +47,29 @@ export default function HeaderNavBar() {
             {/* <li><a href="#rsvp">{t.nav.rsvp}</a></li> */}
             {/* <li><a href="#programme">{t.nav.programme}</a></li> */}
             {/* <li><a href="#infos">{t.nav.infos}</a></li> */}
-            <li><a href="#contact">{t.nav.contact}</a></li>
+            <li>
+              <a href="#contact">{t.nav.contact}</a>
+            </li>
           </ul>
         </nav>
         <div className="header-wedding-switch">
-          <Link 
-            to="/france"
-            className={`wedding-btn ${isFrenchWedding ? 'active' : ''}`}
-          >
+          <Link to="/france" className={`wedding-btn ${isFrenchWedding ? "active" : ""}`}>
             {weddingLabels.france}
           </Link>
-          <Link 
-            to="/brasil"
-            className={`wedding-btn ${isBrazilianWedding ? 'active' : ''}`}
-          >
+          <Link to="/brasil" className={`wedding-btn ${isBrazilianWedding ? "active" : ""}`}>
             {weddingLabels.brazil}
           </Link>
         </div>
         <div className="header-lang-switch">
-          <button 
-            className={`lang-btn ${currentLanguage === 'fr' ? 'active' : ''}`}
-            onClick={() => handleLanguageChange('fr')}
+          <button
+            className={`lang-btn ${currentLanguage === "fr" ? "active" : ""}`}
+            onClick={() => handleLanguageChange("fr")}
           >
             FR
           </button>
-          <button 
-            className={`lang-btn ${currentLanguage === 'pt' ? 'active' : ''}`}
-            onClick={() => handleLanguageChange('pt')}
+          <button
+            className={`lang-btn ${currentLanguage === "pt" ? "active" : ""}`}
+            onClick={() => handleLanguageChange("pt")}
           >
             PT
           </button>

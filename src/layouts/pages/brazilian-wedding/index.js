@@ -1,18 +1,9 @@
 import React from "react";
-import { useLanguage } from "../../../contexts/LanguageContext";
-import { translations } from "../../../data/translations";
 import HeaderNavBar from "components/HeaderNavBar";
 import HeaderLetterist from "components/HeaderLetterist";
-import ProgrammeTimeline from "components/ProgrammeTimeline";
-import InfosPratiques from "components/InfosPratiques";
 import LocationCard from "components/LocationCard";
 
 function BrazilianWedding() {
-  const { currentLanguage } = useLanguage();
-  // Use Brazilian wedding translations based on language
-  const translationKey = currentLanguage === 'fr' ? 'br_fr' : 'br_pt';
-  const t = translations[translationKey];
-
   return (
     <div>
       <HeaderNavBar />
@@ -41,4 +32,4 @@ function BrazilianWedding() {
   );
 }
 
-export default BrazilianWedding; 
+export default BrazilianWedding;

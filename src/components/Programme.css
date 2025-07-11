@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .programme-letterist {
   margin: 70px 0 60px 0;
@@ -10,7 +10,7 @@
   background: none !important;
   box-shadow: none !important;
   border-bottom: 1px solid #e4e1d7;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 .prog-accordion:last-child {
   border-bottom: none;
@@ -27,7 +27,7 @@
   margin: 12px 0 !important;
 }
 .programme-date {
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: "Bebas Neue", Arial, sans-serif;
   font-size: 1.08rem;
   letter-spacing: 0.11em;
   color: #8cb6b8;
@@ -36,7 +36,7 @@
   font-weight: 400;
 }
 .programme-date-star {
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: "Bebas Neue", Arial, sans-serif;
   color: #c99722;
   font-size: 1.19rem;
   text-transform: uppercase;
@@ -47,7 +47,7 @@
 }
 .programme-texte,
 .programme-texte-star {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #232323;
   font-size: 1.12rem;
   font-weight: 400;
@@ -58,7 +58,7 @@
   font-weight: 700;
 }
 .accent-festif {
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: "Bebas Neue", Arial, sans-serif;
   color: #e3882f;
   font-size: 1.08rem;
   font-weight: 400;
@@ -70,7 +70,7 @@
   padding: 8px 4px 4px 6px;
   font-size: 1.05rem;
   color: #4a4a4a;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   opacity: 0.97;
 }
 .programme-details ul {

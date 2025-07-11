@@ -1,18 +1,19 @@
 import React from "react";
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import './Programme.css';
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "./Programme.css";
 
 export default function Programme() {
   return (
-    <section style={{
-      background: "#f8f7f2",
-      padding: "64px 0 36px 0"
-    }}>
+    <section
+      style={{
+        background: "#f8f7f2",
+        padding: "64px 0 36px 0",
+      }}
+    >
       <div className="programme-letterist">
-
         {/* VENDREDI */}
         <Accordion className="prog-accordion" disableGutters>
           <AccordionSummary
@@ -76,7 +77,6 @@ export default function Programme() {
             </div>
           </AccordionDetails>
         </Accordion>
-
       </div>
     </section>
   );

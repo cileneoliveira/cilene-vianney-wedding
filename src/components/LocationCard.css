@@ -19,7 +19,7 @@
 }
 
 .location-title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   font-weight: 600;
   color: white;
@@ -42,7 +42,7 @@
 }
 
 .venue-name {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2rem;
   font-weight: 600;
   color: #3e3932;
@@ -50,7 +50,7 @@
 }
 
 .venue-date {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.3rem;
   font-weight: 500;
   color: #c99722;
@@ -59,7 +59,7 @@
 }
 
 .venue-address {
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: "Bebas Neue", Arial, sans-serif;
   font-size: 1.1rem;
   color: #666;
   margin: 0;
@@ -67,7 +67,7 @@
 }
 
 .venue-description {
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: "Bebas Neue", Arial, sans-serif;
   font-size: 1rem;
   color: #888;
   margin: 0;
@@ -83,25 +83,25 @@
   .location-card-section {
     padding: 40px 3vw;
   }
-  
+
   .location-header {
     padding: 30px;
   }
-  
+
   .location-title {
     font-size: 2rem;
   }
-  
+
   .location-content {
     padding: 30px;
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .venue-name {
     font-size: 1.6rem;
   }
-  
+
   .venue-date {
     font-size: 1.1rem;
   }
@@ -111,33 +111,33 @@
   .location-card-section {
     padding: 20px 2vw;
   }
-  
+
   .location-header {
     padding: 20px;
   }
-  
+
   .location-title {
     font-size: 1.6rem;
   }
-  
+
   .location-content {
     padding: 20px;
     gap: 20px;
   }
-  
+
   .venue-name {
     font-size: 1.4rem;
   }
-  
+
   .venue-date {
     font-size: 1rem;
   }
-  
+
   .venue-address {
     font-size: 1rem;
   }
-  
+
   .venue-description {
     font-size: 0.9rem;
   }
-} 
+}

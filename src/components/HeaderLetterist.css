@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .header-letterist {
   position: relative;
@@ -18,7 +17,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255,255,255,0.13);
+  background: rgba(255, 255, 255, 0.13);
   pointer-events: none;
   border-radius: 0 0 32px 32px;
   z-index: 0;
@@ -38,7 +37,7 @@
   color: #232323 !important;
   border-color: #bcbcb8 !important;
   background: #fffefb !important;
-  transition: background .2s;
+  transition: background 0.2s;
 }
 .lang-btn:hover {
   background: #fbe64e !important;
@@ -81,7 +80,7 @@
 }
 
 .vertical-prenom span {
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: "Bebas Neue", Arial, sans-serif;
   font-weight: 400;
   font-size: 3.2rem;
   letter-spacing: 0.13em;
@@ -91,7 +90,7 @@
   line-height: 1;
   display: block;
   white-space: nowrap;
-  text-shadow: 0 2px 6px rgba(245,244,238,0.18);
+  text-shadow: 0 2px 6px rgba(245, 244, 238, 0.18);
 }
 
 .header-main {
@@ -102,7 +101,7 @@
 }
 
 .header-accroche {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2.1rem;
   font-weight: 500;
   color: #3e3932;
@@ -110,7 +109,7 @@
   margin-top: 0;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  text-shadow: 0 2px 6px rgba(245,244,238,0.14);
+  text-shadow: 0 2px 6px rgba(245, 244, 238, 0.14);
 }
 
 /* --- RESPONSIVE --- */

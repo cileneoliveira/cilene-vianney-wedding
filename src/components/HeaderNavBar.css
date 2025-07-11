@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .header-navbar {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(3px);
   box-shadow: 0 1px 16px #c997220d;
   padding: 0 7vw;
@@ -25,7 +25,7 @@
   align-items: center;
   gap: 8px;
   margin-right: 32px;
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: "Bebas Neue", Arial, sans-serif;
   font-size: 1.13rem;
   letter-spacing: 0.13em;
   color: #c99722;
@@ -47,7 +47,7 @@
 .menu-list li a {
   display: flex;
   align-items: center;
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: "Bebas Neue", Arial, sans-serif;
   color: #3e3932;
   text-transform: uppercase;
   letter-spacing: 0.09em;
@@ -89,7 +89,7 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-family: 'Bebas Neue', Arial, sans-serif !important;
+  font-family: "Bebas Neue", Arial, sans-serif !important;
   font-size: 0.9rem !important;
   border-radius: 9px !important;
   border: 1.6px solid #d6d2b9 !important;
@@ -135,7 +135,7 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-family: 'Bebas Neue', Arial, sans-serif !important;
+  font-family: "Bebas Neue", Arial, sans-serif !important;
   font-size: 1.01rem !important;
   border-radius: 9px !important;
   border: 1.6px solid #d6d2b9 !important;

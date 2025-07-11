@@ -16,7 +16,7 @@ export default function HeaderLetterist() {
         backgroundPosition: "center",
         backgroundSize: "cover", // Changed back to "cover" for full coverage
         backgroundRepeat: "no-repeat",
-        backgroundColor: "#f5f4ee"
+        backgroundColor: "#f5f4ee",
       }}
     >
       <div className="header-content">
@@ -25,16 +25,14 @@ export default function HeaderLetterist() {
             <span>{t.header.vianney}</span>
           </div>
           <div className="vertical-prenom cilene">
-            <div style={{ height: '110px' }}></div>
+            <div style={{ height: "110px" }}></div>
           </div>
           <div className="vertical-prenom cilene">
             <span>{t.header.cilene}</span>
           </div>
         </div>
         <div className="header-main">
-          <h1 className="header-accroche">
-            {t.header.title}
-          </h1>
+          <h1 className="header-accroche">{t.header.title}</h1>
         </div>
       </div>
     </div>

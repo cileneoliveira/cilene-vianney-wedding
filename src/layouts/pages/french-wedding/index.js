@@ -1,16 +1,9 @@
 import React from "react";
-import { useLanguage } from "../../../contexts/LanguageContext";
-import { translations } from "../../../data/translations";
 import HeaderNavBar from "components/HeaderNavBar";
 import HeaderLetterist from "components/HeaderLetterist";
-import ProgrammeTimeline from "components/ProgrammeTimeline";
-import InfosPratiques from "components/InfosPratiques";
 import LocationCard from "components/LocationCard";
 
 function FrenchWedding() {
-  const { currentLanguage } = useLanguage();
-  const t = translations[currentLanguage]; // Use 'fr' or 'pt' for French wedding
-
   return (
     <div>
       <HeaderNavBar />
@@ -40,4 +33,4 @@ function FrenchWedding() {
   );
 }
 
-export default FrenchWedding; 
+export default FrenchWedding;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .infos-section {
   background: #f8f7f2;
@@ -7,7 +7,7 @@
   margin: 0 auto 56px auto;
   border-radius: 24px;
   box-shadow: 0 2px 16px #0000000b;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #232323;
 }
 
@@ -15,7 +15,7 @@
   font-size: 1.8rem;
   margin-bottom: 48px;
   text-align: center;
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: "Bebas Neue", Arial, sans-serif;
   letter-spacing: 0.1em;
   color: #c99722;
 }
@@ -31,7 +31,7 @@
 }
 
 .infos-theme {
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: "Bebas Neue", Arial, sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.09em;
   color: #8cb6b8;
@@ -49,13 +49,13 @@
   display: flex;
   align-items: center;
   gap: 18px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .MuiAccordionDetails-root {
   padding: 16px 0 24px 0 !important;
   background: none;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #4a4a4a;
   font-size: 1.02rem;
 }
@@ -64,7 +64,7 @@
   margin-top: 16px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 700px) {
@@ -90,7 +90,7 @@
 }
 .rsvp-titre {
   font-size: 1.4rem;
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: "Bebas Neue", Arial, sans-serif;
   color: #c99722;
   letter-spacing: 0.12em;
   margin-bottom: 20px;
@@ -100,7 +100,7 @@
   margin: 18px 0 8px 0;
   padding: 10px 28px;
   border-radius: 24px;
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: "Bebas Neue", Arial, sans-serif;
   font-size: 1.08rem;
   background: #fbe64e;
   color: #3e3932;
@@ -129,7 +129,7 @@
 .infos-contact-minimaliste {
   margin: 40px auto 20px auto;
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.12rem;
   color: #232323;
   max-width: 540px;
@@ -156,7 +156,7 @@
 }
 .infos-theme {
   display: block;
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: "Bebas Neue", Arial, sans-serif;
   font-size: 1.16rem;
   letter-spacing: 0.08em;
   color: #8cb6b8;
@@ -178,7 +178,7 @@
 .infos-contact-minimaliste {
   margin: 44px auto 12px auto;
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.12rem;
   color: #232323;
   max-width: 540px;

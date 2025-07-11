@@ -36,4 +36,4 @@ export default function LocationCard() {
       </div>
     </section>
   );
-} 
+}

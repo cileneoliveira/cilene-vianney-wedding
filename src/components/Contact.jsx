@@ -7,7 +7,8 @@ export default function Contact() {
       <h2 className="contact-titre">Nous contacter</h2>
       <div className="contact-infos">
         <div>
-          <strong>Mail :</strong> <a href="mailto:cilene.vianney@email.com">cilene.vianney@email.com</a>
+          <strong>Mail :</strong>{" "}
+          <a href="mailto:cilene.vianney@email.com">cilene.vianney@email.com</a>
         </div>
         <div>
           <strong>Tél :</strong> <a href="tel:+33612345678">+33 6 12 34 56 78</a>
