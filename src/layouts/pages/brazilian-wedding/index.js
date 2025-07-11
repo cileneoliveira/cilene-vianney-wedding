@@ -5,28 +5,10 @@ import LocationCard from "components/LocationCard";
 
 function BrazilianWedding() {
   return (
-    <div>
+    <div style={{ padding: '20px', backgroundColor: '#f0f0f0', minHeight: '100vh' }}>
+      <h1 style={{ color: 'red' }}>Brazilian Wedding Page</h1>
       <HeaderNavBar />
       <HeaderLetterist />
-      {/* <section className="rsvp-section" id="rsvp">
-        <h2 className="rsvp-titre">{t.rsvp.title}</h2>
-        <p>
-          {t.rsvp.description}
-          <br />
-          <a
-            className="rsvp-lien"
-            href="https://cilene-vianney.com/rsvp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t.rsvp.link}
-          </a>
-          <br />
-          <small>{t.rsvp.deadline}</small>
-        </p>
-      </section> */}
-      {/* <ProgrammeTimeline /> */}
-      {/* <InfosPratiques /> */}
       <LocationCard />
     </div>
   );
